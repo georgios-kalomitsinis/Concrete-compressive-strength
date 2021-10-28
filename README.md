@@ -82,7 +82,7 @@ Install all the neccecary dependencies using ```pip3 install <package name>```
 Required packages:
   * numpy   
   * matplotlib 
-  * opencv-python
+  * scikit-learn
   * seaborn
   * pandas
 
