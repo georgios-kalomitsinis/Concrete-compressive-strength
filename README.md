@@ -59,7 +59,7 @@ Since the target variable is a continuous variable, regression evaluation metric
 ## Exploratory Data Analysis
 
 The first step is to understand the data and gain insights from the data before doing any modelling. This includes checking for any missing values, plotting the features with respect to the target variable, observing the distributions of all the features and so on. 
-```In Figure 1```, it is shown the correlation between the features through heatmap and in ```Figure 2``` the pairplot in seaborn to plot pairwise relations between all the features and distributions of features along the diagonal.
+```In Figure 1```, we display the correlation between the features through heatmap and in ```Figure 2``` the pairplot in seaborn to plot pairwise relations between all the features and distributions of features along the diagonal.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/139156716-1f23371a-23f6-4ccc-baae-a49912e37608.png" width="600" />
@@ -74,7 +74,40 @@ The first step is to understand the data and gain insights from the data before 
   Figure 2. Visual representation of correlations (pairplot).</figcaption>
 </figure>
 
+**METHODOLOGY**
 
+*STEP N<sup>o1</sup>*
+
+The linear algorithms are tested with different values of the ```alpha``` parameter. In specific:
+
+*alpha* = [10<sup>-3</sup>, 10<sup>-2</sup>, 10<sup>-1</sup>, 1 , 5, 10, 10<sup>2</sup>, 10<sup>3</sup>]
+
+As the value of the alpha parameter increases, the complexity of the Ridge model increases in both training and evaluation process, while the complexity of Lasso model in the prediction process remains constant. This is because the Ridge model takes account into all the features of the dataset, while the Lasso model performs feature selection, and in particular, the coefficients of the other features are zeroed or reduced by a fixed factor.  
+
+*STEP N<sup>o2</sup>*
+
+In order to select the optimal value of the alpha parameter, cross validation method was applied. In the case of linear regression the model parameters are independent of each other, then the logarithmic probability function of the model parameter vector represents the contribution of each parameter. Thus, by changing the alpha values, we basically control the coefficients penalty. The higher its values, the higher the penalty and therefore the smaller the values of the feature coefficients. 
+
+The dataset was randomly splitted into 70% for ```training``` and 30% for ```testing```. This process is repeated 10 times and as a result the *__average__* and the *__standard deviation__* of each metric was calculated.
+
+*STEP N<sup>o3</sup>*
+
+Given the non-linearity of the function we are trying to model, it is worth evaluating more expressive linear regression models with ```polynomial``` terms of the features. For this reason, a function 
+
+```
+test_poly_regression(X_train, y_train, X_test, y_test, n = 2)
+```
+was implemented. In specific:
+
+* Inputs
+  * X_train: training set
+  * y_train: labels of the training set
+  * X_test: testint set
+  * y_test: labels of the testing set
+  * n: degree of polynomial 𝑛≥1
+
+* Outputs
+  *  A new set of features consisting of the original features and their versions elevated to powers up to 𝑛.
 
 ## Dependencies 
 Install all the neccecary dependencies using ```pip3 install <package name>```
