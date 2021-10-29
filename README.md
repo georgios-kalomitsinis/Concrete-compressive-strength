@@ -113,11 +113,11 @@ was implemented. In specific:
 Install all the neccecary dependencies using ```pip3 install <package name>```
   
 Required packages:
-  * numpy   
-  * matplotlib 
-  * scikit-learn
-  * seaborn
-  * pandas
+  * numpy (Version >= 1.19.4)
+  * matplotlib (Version >= 3.4.3)
+  * scikit-learn (Version >= 0.22.2)
+  * seaborn (Version >= 0.10.1)
+  * pandas (Version >= 1.0.3)
 
   
   
