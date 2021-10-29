@@ -7,7 +7,7 @@ The Compressive Strength of Concrete determines the quality of concrete. The com
 
 # Dataset 
 
-The Concrete Compressive Strength DataSet consists of 1030 observations under 9 attributes. There are 8 input variables and 1 output variable. Seven input variables represent the amount of raw material (measured in kg/m³) and one represents Age (in Days). The target variable is Concrete Compressive Strength measured in (MPa). The attributes include factors that affect concrete strength such as cement, water, aggregate (coarse and fine), and fly ash etc... Also, this dataset is obtained from [UCI Machine Learning Repository.](https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength).
+The Concrete Compressive Strength DataSet consists of 1030 observations under 9 attributes. There are 8 input variables and 1 output variable. Seven input variables represent the amount of raw material (measured in kg/m³) and one represents Age (in Days). The target variable is Concrete Compressive Strength measured in (MPa). The attributes include factors that affect concrete strength such as cement, water, aggregate (coarse and fine), and fly ash etc... Also, this dataset is obtained from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength).
   
 * Number of instances - 1030
 * Number of Attributes - 9
