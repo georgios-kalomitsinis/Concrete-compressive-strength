@@ -95,7 +95,7 @@ The dataset was randomly splitted into 70% for ```training``` and 30% for ```tes
 Given the non-linearity of the function we are trying to model, it is worth evaluating more expressive linear regression models with ```polynomial``` terms of the features. For this reason, a function 
 
 ```
-test_poly_regression(X_train, y_train, X_test, y_test, n = 2)
+test_poly_regression(X_train, y_train, X_test, y_test, n >= 2)
 ```
 was implemented. In specific:
 
@@ -104,7 +104,7 @@ was implemented. In specific:
   * y_train: labels of the training set
   * X_test: testint set
   * y_test: labels of the testing set
-  * n: degree of polynomial 𝑛≥1
+  * n: degree of polynomial 𝑛≥2
 
 * Outputs
   *  A new set of features consisting of the original features and their versions elevated to powers up to 𝑛.
