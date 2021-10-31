@@ -122,7 +122,7 @@ Required packages:
 ```
 
 ## License
-This project is under [MIT license](https://github.com/georgios-kalomitsinis/Concrete-compressive-strength/blob/main/LICENSE).
+This project is licensed under the [MIT license](https://github.com/georgios-kalomitsinis/Concrete-compressive-strength/blob/main/LICENSE).
   
   
   
