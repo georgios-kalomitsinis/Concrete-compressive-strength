@@ -121,7 +121,8 @@ Required packages:
   - pandas (Version >= 1.0.3)
 ```
 
-  
+## License
+This project is under [MIT license](https://github.com/georgios-kalomitsinis/Concrete-compressive-strength/blob/main/LICENSE).
   
   
   
